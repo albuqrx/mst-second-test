@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+  background-color: #111;
+}
+
+.hype {
+  padding: 2rem;
+}
+
+.hype__canvas {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 700 / 260;
+}
+
+.hype__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  clip-path: url(#mask-for-video);
+}
+
+/* .hype__mask {
+  position: absolute;
+} */
+
+.hype__content {
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  font-size: 60px;
+}
+
+.hype__content-text {
+  fill: white;
+} 
+
